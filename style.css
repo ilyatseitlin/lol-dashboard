@@ -172,3 +172,11 @@ td.num,th.num{text-align:right}
 @media (max-width:860px){.training.tp{grid-template-columns:1fr}}
 
 .spark.empty{display:grid;place-items:center;color:var(--muted);font-size:11px}
+
+/* ссылка на форму предложений */
+.navrow{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.navrow .nav{min-width:0;flex:1}
+.cta{flex:none;color:var(--gold);border:1px solid #5b4a24;border-radius:8px;padding:6px 12px;font-size:13px;font-weight:600;text-decoration:none;white-space:nowrap;background:rgba(200,170,110,.08)}
+.cta:hover{background:rgba(200,170,110,.18)}
+.toplinks{display:flex;align-items:center;gap:16px}
+@media (max-width:640px){.cta .long{display:none}.toplinks{gap:10px}}
