@@ -1,0 +1,43 @@
+name: Обновление данных
+
+on:
+  schedule:
+    - cron: "0 5 * * *"   # каждый день в 05:00 UTC (08:00 по Москве)
+  workflow_dispatch:       # ручной запуск из вкладки Actions
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Кэш матчей
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: riot-matches-${{ github.run_id }}
+          restore-keys: riot-matches-
+
+      - name: Сбор данных из Riot API
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+        run: python3 scripts/fetch_riot.py
+
+      - name: Коммит изменений
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json history/lp.json
+          if git diff --cached --quiet; then
+            echo "Изменений нет"
+          else
+            git commit -m "Обновление данных $(date -u +%F)"
+            git push
+          fi
