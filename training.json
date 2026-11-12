@@ -6,44 +6,120 @@
     "weekOf": "2026-11-09"
   },
   "goals": [
-    { "title": "Обзор/мин (среднее по команде)", "value": 1.42, "target": 1.60, "format": "num" },
-    { "title": "Контроль объектов (драконы)", "value": 0.62, "target": 0.65, "format": "pct" },
-    { "title": "Скримы выиграно", "value": 3, "target": 5, "format": "int" }
+    {
+      "title": "Обзор/мин (среднее по команде)",
+      "value": 1.42,
+      "target": 1.6,
+      "format": "num"
+    },
+    {
+      "title": "Контроль объектов (драконы)",
+      "value": 0.62,
+      "target": 0.65,
+      "format": "pct"
+    },
+    {
+      "title": "Скримы выиграно",
+      "value": 3,
+      "target": 5,
+      "format": "int"
+    }
   ],
   "sessions": [
     {
       "id": "2026-11-10-drill-wards",
-      "date": "2026-11-10", "time": "19:00", "type": "drill", "status": "done",
+      "date": "2026-11-10",
+      "time": "19:00",
+      "type": "drill",
+      "status": "done",
       "title": "Расстановка вардов вокруг драконов",
-      "participants": ["jng", "adc", "sup"],
+      "participants": [
+        "jng",
+        "adc",
+        "sup"
+      ],
       "notes": "Отработали стандартные точки на 4:00–8:00. Саппорту не хватает вардов в реке."
     },
     {
       "id": "2026-11-13-vod-vision",
-      "date": "2026-11-13", "time": "19:00", "type": "vod", "status": "done",
+      "date": "2026-11-13",
+      "time": "19:00",
+      "type": "vod",
+      "status": "done",
       "title": "Разбор VOD: обзор и мидгейм",
-      "participants": ["top", "jng", "mid", "adc", "sup"],
+      "participants": [
+        "top",
+        "jng",
+        "mid",
+        "adc",
+        "sup"
+      ],
       "notes": "Разобрали 3 проигранные игры: потери вокруг барона из-за пустого обзора."
     },
     {
       "id": "2026-11-15-scrim-ravens",
-      "date": "2026-11-15", "time": "17:00", "type": "scrim", "status": "planned",
+      "date": "2026-11-15",
+      "time": "17:00",
+      "type": "scrim",
+      "status": "planned",
       "title": "Скримы (Bo3) против «Ravens»",
-      "participants": ["top", "jng", "mid", "adc", "sup"],
+      "participants": [
+        "top",
+        "jng",
+        "mid",
+        "adc",
+        "sup"
+      ],
       "notes": "Цель: 2 варда на дракона до 5:00."
     },
     {
       "id": "2026-11-16-objectives",
-      "date": "2026-11-16", "time": "19:00", "type": "drill", "status": "planned",
+      "date": "2026-11-16",
+      "time": "19:00",
+      "type": "drill",
+      "status": "planned",
       "title": "Постановка на объекты и шотколлинг",
-      "participants": ["top", "jng", "mid", "adc", "sup"],
+      "participants": [
+        "top",
+        "jng",
+        "mid",
+        "adc",
+        "sup"
+      ],
       "notes": ""
     },
     {
       "id": "2026-11-19-vod-scrim",
-      "date": "2026-11-19", "time": "19:00", "type": "vod", "status": "planned",
+      "date": "2026-11-19",
+      "time": "19:00",
+      "type": "vod",
+      "status": "planned",
       "title": "Разбор скримов",
-      "participants": ["top", "jng", "mid", "adc", "sup"],
+      "participants": [
+        "top",
+        "jng",
+        "mid",
+        "adc",
+        "sup"
+      ],
+      "notes": ""
+    }
+  ],
+  "tasks": [
+    {
+      "id": "t-demo-1",
+      "title": "Расставлять 2 варда на дракон до 5:00",
+      "assignee": "all",
+      "due": "2026-11-16",
+      "status": "doing",
+      "notes": ""
+    },
+    {
+      "id": "t-demo-2",
+      "title": "Посмотреть свой разбор VOD и выписать 3 ошибки",
+      "assignee": "sup",
+      "due": "2026-11-14",
+      "status": "todo",
       "notes": ""
     }
   ]

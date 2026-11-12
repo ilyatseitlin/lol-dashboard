@@ -157,6 +157,22 @@ function renderTraining() {
   }).join('');
 }
 
+const TASK_STATUS = { todo: 'К выполнению', doing: 'В работе', done: 'Сделано' };
+function taskRows(tasks, byId) {
+  return tasks.map((k) => `<div class="trow ${k.status}"><div class="tmain"><b>${esc(k.title)}</b>${k.notes ? `<span class="muted">${esc(k.notes)}</span>` : ''}</div>
+    <div class="tmeta"><span>${k.assignee === 'all' ? 'Вся команда' : esc((byId[k.assignee] || {}).name || k.assignee)}</span>${k.due ? `<span>до ${dateRu(k.due)}</span>` : ''}<span class="status ${k.status === 'done' ? 'done' : 'planned'}">${TASK_STATUS[k.status] || k.status}</span></div></div>`).join('');
+}
+function renderTasks() {
+  const tasks = (state.training && state.training.tasks) || [];
+  const card = $('tasksCard');
+  if (!card) return;
+  const open = tasks.filter((k) => k.status !== 'done').sort((a, b) => (a.due || '9999').localeCompare(b.due || '9999'));
+  card.hidden = !open.length;
+  if (!open.length) return;
+  const byId = Object.fromEntries(state.data.players.map((p) => [p.id, p]));
+  $('tasks').innerHTML = taskRows(open.slice(0, 6), byId);
+}
+
 function setupNav() {
   const links = [...document.querySelectorAll('#nav a')];
   const secs = links.map((a) => document.querySelector(a.getAttribute('href')));
@@ -190,7 +206,7 @@ async function init() {
 }
 
 function render() {
-  renderHeader(); renderRoster(); renderLeaderboard(); renderBestAt(); renderChampions(); renderStats(); renderInsights(); renderTraining();
+  renderHeader(); renderRoster(); renderLeaderboard(); renderBestAt(); renderChampions(); renderStats(); renderInsights(); renderTraining(); renderTasks();
 }
 
 init();

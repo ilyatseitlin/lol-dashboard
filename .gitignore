@@ -12,3 +12,5 @@ CLAUDE.md
 docs/
 .claude/
 data.mock.json
+# админка (Cloudflare Worker): не публикуется через GitHub Pages
+worker/

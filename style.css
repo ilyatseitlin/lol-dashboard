@@ -180,3 +180,12 @@ td.num,th.num{text-align:right}
 .cta:hover{background:rgba(200,170,110,.18)}
 .toplinks{display:flex;align-items:center;gap:16px}
 @media (max-width:640px){.cta .long{display:none}.toplinks{gap:10px}}
+
+/* задания команде */
+.tasks-card{margin-top:14px}
+.trow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;border-top:1px solid var(--line)}
+.trow:first-child{border-top:0}
+.trow.done{opacity:.6}
+.tmain{min-width:0}.tmain b{display:block;font-size:14px;font-weight:600}.tmain .muted{display:block}
+.tmeta{display:flex;align-items:center;gap:12px;flex:none;color:var(--muted);font-size:13px;flex-wrap:wrap;justify-content:flex-end}
+@media (max-width:640px){.trow{flex-direction:column;align-items:flex-start}.tmeta{justify-content:flex-start}}
