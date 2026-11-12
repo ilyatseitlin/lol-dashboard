@@ -189,3 +189,21 @@ td.num,th.num{text-align:right}
 .tmain{min-width:0}.tmain b{display:block;font-size:14px;font-weight:600}.tmain .muted{display:block}
 .tmeta{display:flex;align-items:center;gap:12px;flex:none;color:var(--muted);font-size:13px;flex-wrap:wrap;justify-content:flex-end}
 @media (max-width:640px){.trow{flex-direction:column;align-items:flex-start}.tmeta{justify-content:flex-start}}
+
+/* нижнее меню на телефоне */
+.tabbar{display:none}
+@media (max-width:640px){
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom))}
+  .nav{display:none}
+  .navbar{position:static;background:none;border-bottom:0;backdrop-filter:none}
+  .navrow{justify-content:flex-end;padding-top:6px}
+  .tabbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:rgba(11,15,26,.97);backdrop-filter:blur(10px);border-top:1px solid var(--line);padding:6px 4px calc(6px + env(safe-area-inset-bottom))}
+  .tabbar button{flex:1;min-width:0;display:flex;flex-direction:column;align-items:center;gap:3px;background:none;border:0;border-radius:10px;color:var(--muted);font:inherit;font-size:11px;padding:6px 2px;cursor:pointer;-webkit-tap-highlight-color:transparent}
+  .tabbar button svg{width:22px;height:22px}
+  .tabbar button[aria-current="true"]{color:var(--gold)}
+  body[data-view="roster"] [data-view-sec]:not([data-view-sec="roster"]),
+  body[data-view="champions"] [data-view-sec]:not([data-view-sec="champions"]),
+  body[data-view="stats"] [data-view-sec]:not([data-view-sec="stats"]),
+  body[data-view="plan"] [data-view-sec]:not([data-view-sec="plan"]),
+  body[data-view="tasks"] [data-view-sec]:not([data-view-sec="tasks"]){display:none}
+}

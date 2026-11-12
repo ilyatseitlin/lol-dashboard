@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>КРОВЬ — LoL Dashboard</title>
   <meta name="description" content="Дашборд команды по League of Legends: рейтинг, чемпионы, инсайты, тренировки.">
   <meta name="theme-color" content="#0b0f1a">
@@ -52,9 +52,9 @@
   </div>
 
   <main class="wrap">
-    <section id="roster"><h2>Состав</h2><div class="roster" id="rosterGrid"></div></section>
+    <section id="roster" data-view-sec="roster"><h2>Состав</h2><div class="roster" id="rosterGrid"></div></section>
 
-    <section class="two">
+    <section class="two" data-view-sec="roster">
       <div class="card" id="best">
         <h2>Кто играет лучше</h2>
         <div class="table-wrap"><table id="leaderboard"></table></div>
@@ -62,7 +62,7 @@
       <div class="card" id="bestAt"><h2>Лучший в…</h2><div id="bestAtList"></div></div>
     </section>
 
-    <section id="champions">
+    <section id="champions" data-view-sec="champions">
       <h2>Чемпионы</h2>
       <div class="two eq">
         <div class="card"><h3>Чемпионы команды (топ 8)</h3><div class="table-wrap"><table id="teamChamps"></table></div></div>
@@ -70,7 +70,7 @@
       </div>
     </section>
 
-    <section id="stats">
+    <section id="stats" data-view-sec="stats">
       <h2>Командная статистика</h2>
       <div class="card stats">
         <div>
@@ -85,20 +85,32 @@
       </div>
     </section>
 
-    <section id="insights"><h2>Инсайты</h2><div class="insights" id="insightList"></div></section>
+    <section id="insights" data-view-sec="stats"><h2>Инсайты</h2><div class="insights" id="insightList"></div></section>
 
-    <section id="training">
+    <section id="training" data-view-sec="plan">
       <h2>План тренировок</h2>
       <div class="training">
         <div class="focus" id="focus"></div>
         <div class="card"><h3>Ближайшие сессии</h3><div class="table-wrap"><table id="sessions"></table></div><a class="seeall" href="training.html">Весь план тренировок →</a></div>
         <div class="card"><h3>Цели недели</h3><div id="goals"></div></div>
       </div>
+    </section>
+
+    <section id="tasksSec" data-view-sec="tasks">
       <div class="card tasks-card" id="tasksCard" hidden><h3>Задания команде</h3><div id="tasks"></div></div>
     </section>
   </main>
 
 
+
+  <nav class="tabbar" id="tabbar" aria-label="Разделы">
+    <button type="button" data-go="roster" aria-current="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 5.2a3 3 0 0 1 0 5.6M18 14.4c1.8.8 3 2.6 3 5.6"/></svg><span>Состав</span></button>
+    <button type="button" data-go="champions"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3 4 6v6c0 4.5 3.2 7.7 8 9 4.8-1.3 8-4.500 8-9V6z"/><path d="m9 12 2 2 4-4"/></svg><span>Чемпионы</span></button>
+    <button type="button" data-go="stats"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><span>Статистика</span></button>
+    <button type="button" data-go="plan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Тренировки</span></button>
+    <button type="button" data-go="tasks"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="3"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg><span>Задания</span></button>
+  </nav>
   <script src="app.js"></script>
+  <script src="tabs.js"></script>
 </body>
 </html>
