@@ -1,0 +1,444 @@
+{
+ "meta": {
+  "mock": false,
+  "team": "КРОВЬ",
+  "patch": "16.22",
+  "generatedAt": "2026-11-12",
+  "queue": "solo+flex",
+  "window": 20,
+  "repo": "#"
+ },
+ "team": {
+  "basis": "team",
+  "rankScore": 1739,
+  "rankLabel": "Platinum III",
+  "winrate": 0.4,
+  "games": 20,
+  "avgDuration": "28:15",
+  "firstBlood": 0.4,
+  "form": [
+   "W",
+   "W",
+   "L",
+   "W",
+   "L",
+   "L",
+   "L",
+   "L",
+   "W",
+   "L",
+   "W",
+   "W",
+   "L",
+   "L",
+   "W",
+   "L",
+   "W",
+   "L",
+   "L",
+   "L"
+  ],
+  "objectives": {
+   "dragons": 0.55,
+   "barons": 1.0,
+   "towers": 0.83
+  },
+  "champions": [
+   {
+    "id": "Volibear",
+    "name": "Volibear",
+    "games": 15,
+    "winrate": 0.6,
+    "kda": 2.38
+   },
+   {
+    "id": "Tristana",
+    "name": "Tristana",
+    "games": 10,
+    "winrate": 0.4,
+    "kda": 3.15
+   },
+   {
+    "id": "Nautilus",
+    "name": "Nautilus",
+    "games": 9,
+    "winrate": 0.56,
+    "kda": 3.02
+   },
+   {
+    "id": "MasterYi",
+    "name": "Master Yi",
+    "games": 9,
+    "winrate": 0.33,
+    "kda": 2.25
+   },
+   {
+    "id": "Lux",
+    "name": "Lux",
+    "games": 7,
+    "winrate": 0.57,
+    "kda": 2.69
+   },
+   {
+    "id": "Lulu",
+    "name": "Lulu",
+    "games": 6,
+    "winrate": 0.33,
+    "kda": 2.69
+   },
+   {
+    "id": "Jinx",
+    "name": "Jinx",
+    "games": 6,
+    "winrate": 0.0,
+    "kda": 1.59
+   },
+   {
+    "id": "Nocturne",
+    "name": "Nocturne",
+    "games": 5,
+    "winrate": 0.4,
+    "kda": 4.7
+   }
+  ]
+ },
+ "players": [
+  {
+   "id": "top",
+   "role": "Top",
+   "name": "TIKTOKYO",
+   "tag": "RU1",
+   "platform": "ru",
+   "opgg": "https://op.gg/lol/summoners/ru/TIKTOKYO-RU1",
+   "rank": {
+    "tier": "Platinum",
+    "division": "IV",
+    "lp": 72,
+    "wins": 86,
+    "losses": 83
+   },
+   "rankScore": 1672,
+   "stats": {
+    "games": 20,
+    "winrate": 0.55,
+    "wins": 11,
+    "losses": 9,
+    "kda": 2.21,
+    "csPerMin": 7.8,
+    "visionPerMin": 0.82,
+    "dmgPerMin": 771
+   },
+   "formScore": 55,
+   "formDelta": -16,
+   "lpHistory": [],
+   "champions": [
+    {
+     "id": "Volibear",
+     "name": "Volibear",
+     "games": 13,
+     "winrate": 0.54,
+     "kda": 1.96
+    },
+    {
+     "id": "Malphite",
+     "name": "Malphite",
+     "games": 3,
+     "winrate": 0.67,
+     "kda": 3.8
+    },
+    {
+     "id": "Shen",
+     "name": "Shen",
+     "games": 3,
+     "winrate": 0.67,
+     "kda": 4.09
+    },
+    {
+     "id": "Yone",
+     "name": "Yone",
+     "games": 1,
+     "winrate": 0.0,
+     "kda": 0.2
+    }
+   ]
+  },
+  {
+   "id": "jng",
+   "role": "Jungle",
+   "name": "wishmegodspeed",
+   "tag": "000",
+   "platform": "ru",
+   "opgg": "https://op.gg/lol/summoners/ru/wishmegodspeed-000",
+   "rank": {
+    "tier": "Gold",
+    "division": "III",
+    "lp": 90,
+    "wins": 2,
+    "losses": 6
+   },
+   "rankScore": 1390,
+   "stats": {
+    "games": 20,
+    "winrate": 0.4,
+    "wins": 8,
+    "losses": 12,
+    "kda": 2.76,
+    "csPerMin": 6.0,
+    "visionPerMin": 0.93,
+    "dmgPerMin": 763
+   },
+   "formScore": 46,
+   "formDelta": -2,
+   "lpHistory": [],
+   "champions": [
+    {
+     "id": "MasterYi",
+     "name": "Master Yi",
+     "games": 9,
+     "winrate": 0.33,
+     "kda": 2.25
+    },
+    {
+     "id": "Nocturne",
+     "name": "Nocturne",
+     "games": 5,
+     "winrate": 0.4,
+     "kda": 4.7
+    },
+    {
+     "id": "Volibear",
+     "name": "Volibear",
+     "games": 2,
+     "winrate": 1.0,
+     "kda": 5.5
+    },
+    {
+     "id": "Warwick",
+     "name": "Warwick",
+     "games": 2,
+     "winrate": 0.0,
+     "kda": 0.88
+    },
+    {
+     "id": "Tristana",
+     "name": "Tristana",
+     "games": 1,
+     "winrate": 1.0,
+     "kda": 5.75
+    }
+   ]
+  },
+  {
+   "id": "mid",
+   "role": "Mid",
+   "name": "Кera",
+   "tag": "RU1",
+   "platform": "ru",
+   "opgg": "https://op.gg/lol/summoners/ru/%D0%9Aera-RU1",
+   "rank": {
+    "tier": "Emerald",
+    "division": "III",
+    "lp": 55,
+    "wins": 22,
+    "losses": 28
+   },
+   "rankScore": 2155,
+   "stats": {
+    "games": 20,
+    "winrate": 0.4,
+    "wins": 8,
+    "losses": 12,
+    "kda": 2.62,
+    "csPerMin": 6.6,
+    "visionPerMin": 1.03,
+    "dmgPerMin": 946
+   },
+   "formScore": 46,
+   "formDelta": -6,
+   "lpHistory": [],
+   "champions": [
+    {
+     "id": "Lux",
+     "name": "Lux",
+     "games": 7,
+     "winrate": 0.57,
+     "kda": 2.69
+    },
+    {
+     "id": "Diana",
+     "name": "Diana",
+     "games": 4,
+     "winrate": 0.25,
+     "kda": 3.33
+    },
+    {
+     "id": "Malzahar",
+     "name": "Malzahar",
+     "games": 3,
+     "winrate": 0.0,
+     "kda": 1.45
+    },
+    {
+     "id": "Vex",
+     "name": "Vex",
+     "games": 2,
+     "winrate": 0.5,
+     "kda": 5.29
+    },
+    {
+     "id": "Lissandra",
+     "name": "Lissandra",
+     "games": 2,
+     "winrate": 0.5,
+     "kda": 1.64
+    }
+   ]
+  },
+  {
+   "id": "adc",
+   "role": "ADC",
+   "name": "missiscox",
+   "tag": "228",
+   "platform": "ru",
+   "opgg": "https://op.gg/lol/summoners/ru/missiscox-228",
+   "rank": {
+    "tier": "Platinum",
+    "division": "III",
+    "lp": 52,
+    "wins": 56,
+    "losses": 49
+   },
+   "rankScore": 1752,
+   "stats": {
+    "games": 20,
+    "winrate": 0.3,
+    "wins": 6,
+    "losses": 14,
+    "kda": 2.52,
+    "csPerMin": 7.6,
+    "visionPerMin": 0.85,
+    "dmgPerMin": 902
+   },
+   "formScore": 39,
+   "formDelta": 5,
+   "lpHistory": [],
+   "champions": [
+    {
+     "id": "Tristana",
+     "name": "Tristana",
+     "games": 9,
+     "winrate": 0.33,
+     "kda": 2.94
+    },
+    {
+     "id": "Jinx",
+     "name": "Jinx",
+     "games": 5,
+     "winrate": 0.0,
+     "kda": 1.66
+    },
+    {
+     "id": "Sivir",
+     "name": "Sivir",
+     "games": 4,
+     "winrate": 0.5,
+     "kda": 2.81
+    },
+    {
+     "id": "Jhin",
+     "name": "Jhin",
+     "games": 1,
+     "winrate": 1.0,
+     "kda": 6.67
+    },
+    {
+     "id": "Caitlyn",
+     "name": "Caitlyn",
+     "games": 1,
+     "winrate": 0.0,
+     "kda": 0.75
+    }
+   ]
+  },
+  {
+   "id": "sup",
+   "role": "Support",
+   "name": "KJIACC",
+   "tag": "364",
+   "platform": "ru",
+   "opgg": "https://op.gg/lol/summoners/ru/KJIACC-364",
+   "rank": {
+    "tier": "Platinum",
+    "division": "III",
+    "lp": 27,
+    "wins": 18,
+    "losses": 27
+   },
+   "rankScore": 1727,
+   "stats": {
+    "games": 20,
+    "winrate": 0.4,
+    "wins": 8,
+    "losses": 12,
+    "kda": 2.71,
+    "csPerMin": 1.2,
+    "visionPerMin": 2.51,
+    "dmgPerMin": 201
+   },
+   "formScore": 44,
+   "formDelta": 3,
+   "lpHistory": [],
+   "champions": [
+    {
+     "id": "Nautilus",
+     "name": "Nautilus",
+     "games": 9,
+     "winrate": 0.56,
+     "kda": 3.02
+    },
+    {
+     "id": "Lulu",
+     "name": "Lulu",
+     "games": 6,
+     "winrate": 0.33,
+     "kda": 2.69
+    },
+    {
+     "id": "Nami",
+     "name": "Nami",
+     "games": 2,
+     "winrate": 0.5,
+     "kda": 2.67
+    },
+    {
+     "id": "Braum",
+     "name": "Braum",
+     "games": 2,
+     "winrate": 0.0,
+     "kda": 1.56
+    },
+    {
+     "id": "Leona",
+     "name": "Leona",
+     "games": 1,
+     "winrate": 0.0,
+     "kda": 1.75
+    }
+   ]
+  }
+ ],
+ "insights": [
+  {
+   "type": "bad",
+   "icon": "trend",
+   "title": "TIKTOKYO: Form Score упал на 16",
+   "text": "Сравнение последних 10 игр с предыдущими 10."
+  },
+  {
+   "type": "neutral",
+   "icon": "info",
+   "title": "0% побед в играх короче 25 минут",
+   "text": "Выборка: 5 игр."
+  }
+ ]
+}

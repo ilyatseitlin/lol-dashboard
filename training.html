@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>КРОВЬ — план тренировок</title>
+  <meta name="description" content="Полный план тренировок команды: цели, расписание, итоги.">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap top-row">
+      <div class="brand">
+        <svg class="logo" viewBox="0 0 48 56" aria-hidden="true"><path d="M24 2 4 10v18c0 14 9 22 20 26 11-4 20-12 20-26V10z" fill="#2a0d14" stroke="#e84057" stroke-width="2.5"/><path d="M24 14c-5 8-9 13-9 19a9 9 0 0 0 18 0c0-6-4-11-9-19z" fill="#e84057"/></svg>
+        <div><h1 id="teamName">КРОВЬ</h1><p class="sub" id="upd"></p></div>
+      </div>
+      <a class="back" href="index.html#training">← К дашборду</a>
+    </div>
+  </header>
+  <main class="wrap">
+    <h2>План тренировок</h2>
+    <div class="training tp">
+      <div class="focus" id="focus"></div>
+      <div class="card"><h3>Цели недели</h3><div id="goals"></div></div>
+    </div>
+    <h2>Ближайшие</h2>
+    <div class="sess" id="upcoming"></div>
+    <h2>Проведённые</h2>
+    <div class="sess" id="done"></div>
+  </main>
+  <footer class="wrap foot"><span class="muted">Не связано с Riot Games и не одобрено ими.</span><span class="chip" id="mockChip" hidden>Мок-данные</span></footer>
+  <script src="training.js"></script>
+</body>
+</html>

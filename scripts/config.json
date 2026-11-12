@@ -1,0 +1,92 @@
+{
+  "team": "КРОВЬ",
+  "window": 20,
+  "queues": [
+    420,
+    440
+  ],
+  "minTeamMembers": 3,
+  "minTeamGames": 5,
+  "players": [
+    {
+      "id": "top",
+      "role": "Top",
+      "name": "TIKTOKYO",
+      "tag": "RU1",
+      "platform": "ru",
+      "opgg": "https://op.gg/lol/summoners/ru/TIKTOKYO-RU1"
+    },
+    {
+      "id": "jng",
+      "role": "Jungle",
+      "name": "wishmegodspeed",
+      "tag": "000",
+      "platform": "ru",
+      "opgg": "https://op.gg/lol/summoners/ru/wishmegodspeed-000"
+    },
+    {
+      "id": "mid",
+      "role": "Mid",
+      "name": "Кera",
+      "tag": "RU1",
+      "platform": "ru",
+      "opgg": "https://op.gg/lol/summoners/ru/%D0%9Aera-RU1"
+    },
+    {
+      "id": "adc",
+      "role": "ADC",
+      "name": "missiscox",
+      "tag": "228",
+      "platform": "ru",
+      "opgg": "https://op.gg/lol/summoners/ru/missiscox-228"
+    },
+    {
+      "id": "sup",
+      "role": "Support",
+      "name": "KJIACC",
+      "tag": "364",
+      "platform": "ru",
+      "opgg": "https://op.gg/lol/summoners/ru/KJIACC-364"
+    }
+  ],
+  "roleNorms": {
+    "_comment": "(?) Ориентиры по ролям для Form Score: значение в норме = 50 баллов, вдвое выше = 100. Нормы близки к типичным значениям Platinum-игрока, выставлены по первому реальному сбору 2026-11-12; пересмотреть, когда накопится больше данных.",
+    "Top": {
+      "kda": 2.3,
+      "csPerMin": 7.0,
+      "visionPerMin": 0.8,
+      "dmgPerMin": 650
+    },
+    "Jungle": {
+      "kda": 2.8,
+      "csPerMin": 5.8,
+      "visionPerMin": 0.9,
+      "dmgPerMin": 650
+    },
+    "Mid": {
+      "kda": 2.8,
+      "csPerMin": 7.0,
+      "visionPerMin": 0.85,
+      "dmgPerMin": 800
+    },
+    "ADC": {
+      "kda": 2.7,
+      "csPerMin": 7.5,
+      "visionPerMin": 0.75,
+      "dmgPerMin": 800
+    },
+    "Support": {
+      "kda": 2.8,
+      "csPerMin": 1.0,
+      "visionPerMin": 2.2,
+      "dmgPerMin": 220
+    }
+  },
+  "formWeights": {
+    "winrate": 0.3,
+    "kda": 0.25,
+    "dmgPerMin": 0.2,
+    "csPerMin": 0.15,
+    "visionPerMin": 0.1
+  }
+}

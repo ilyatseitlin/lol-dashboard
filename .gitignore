@@ -1,0 +1,14 @@
+# секреты и кэш
+.env
+.env.*
+!.env.example
+.cache/
+__pycache__/
+.DS_Store
+.data.json.tmp
+data.json.tmp
+# внутренние файлы проекта (остаются только локально)
+CLAUDE.md
+docs/
+.claude/
+data.mock.json
