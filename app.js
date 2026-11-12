@@ -60,8 +60,6 @@ function renderHeader() {
     <div class="rk">${emblem(tier).replace('width="22" height="22"', 'width="38" height="38"')}<div><small>Рейтинг команды</small><span class="big">≈ ${esc(team.rankLabel)}</span></div></div>
     <span class="sep"></span><div><small>Team Score</small><span class="big">${team.rankScore}</span></div>
     <span class="sep"></span><div><small>Винрейт</small><span class="big up">${pct(team.winrate)}</span></div>`;
-  $('repoLink').href = meta.repo || '#';
-  $('mockChip').hidden = !meta.mock;
 }
 
 function renderRoster() {

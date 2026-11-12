@@ -25,7 +25,6 @@ async function init() {
     try { ver = (await (await fetch('https://ddragon.leagueoflegends.com/api/versions.json')).json())[0]; } catch (e) {}
     const byId = Object.fromEntries(d.players.map((p) => [p.id, p]));
     $('teamName').textContent = d.meta.team;
-    $('mockChip').hidden = !d.meta.mock;
     $('upd').textContent = 'Обновлено ' + new Date(t.updated + 'T00:00').toLocaleDateString('ru-RU', { day: 'numeric', month: 'long', year: 'numeric' });
     $('focus').innerHTML = `<small>Фокус недели</small><h3>${esc(t.focus.title)}</h3><p>${esc(t.focus.text)}</p>`;
     $('goals').innerHTML = t.goals.map((g) => `<div class="goal"><div class="row"><span>${esc(g.title)}</span><b>${fmt(g, g.value)} / ${fmt(g, g.target)}</b></div><span class="bar"><i style="width:${Math.round(Math.min(g.value / g.target, 1) * 100)}%"></i></span></div>`).join('');
