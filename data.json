@@ -3,7 +3,7 @@
   "mock": false,
   "team": "КРОВЬ",
   "patch": "16.22",
-  "generatedAt": "2026-11-12",
+  "generatedAt": "2026-11-13",
   "queue": "solo+flex",
   "window": 20,
   "repo": "#"
@@ -130,7 +130,10 @@
    },
    "formScore": 55,
    "formDelta": -16,
-   "lpHistory": [],
+   "lpHistory": [
+    0,
+    0
+   ],
    "champions": [
     {
      "id": "Volibear",
@@ -189,7 +192,10 @@
    },
    "formScore": 46,
    "formDelta": -2,
-   "lpHistory": [],
+   "lpHistory": [
+    0,
+    0
+   ],
    "champions": [
     {
      "id": "MasterYi",
@@ -255,7 +261,10 @@
    },
    "formScore": 46,
    "formDelta": -6,
-   "lpHistory": [],
+   "lpHistory": [
+    0,
+    0
+   ],
    "champions": [
     {
      "id": "Lux",
@@ -321,7 +330,10 @@
    },
    "formScore": 39,
    "formDelta": 5,
-   "lpHistory": [],
+   "lpHistory": [
+    0,
+    0
+   ],
    "champions": [
     {
      "id": "Tristana",
@@ -387,7 +399,10 @@
    },
    "formScore": 44,
    "formDelta": 3,
-   "lpHistory": [],
+   "lpHistory": [
+    0,
+    0
+   ],
    "champions": [
     {
      "id": "Nautilus",
