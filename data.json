@@ -10,8 +10,8 @@
  },
  "team": {
   "basis": "team",
-  "rankScore": 1739,
-  "rankLabel": "Platinum III",
+  "rankScore": 1665,
+  "rankLabel": "Platinum IV",
   "winrate": 0.4,
   "games": 20,
   "avgDuration": "28:15",
@@ -111,13 +111,13 @@
    "platform": "ru",
    "opgg": "https://op.gg/lol/summoners/ru/TIKTOKYO-RU1",
    "rank": {
-    "tier": "Platinum",
-    "division": "IV",
-    "lp": 72,
-    "wins": 86,
-    "losses": 83
+    "tier": "Gold",
+    "division": "III",
+    "lp": 65,
+    "wins": 18,
+    "losses": 25
    },
-   "rankScore": 1672,
+   "rankScore": 1365,
    "stats": {
     "games": 20,
     "winrate": 0.4,
@@ -135,7 +135,7 @@
     0,
     0,
     0,
-    0
+    -307
    ],
    "champions": [
     {
@@ -169,13 +169,13 @@
    "platform": "ru",
    "opgg": "https://op.gg/lol/summoners/ru/wishmegodspeed-000",
    "rank": {
-    "tier": "Gold",
+    "tier": "Platinum",
     "division": "III",
-    "lp": 90,
-    "wins": 2,
-    "losses": 6
+    "lp": 42,
+    "wins": 21,
+    "losses": 26
    },
-   "rankScore": 1390,
+   "rankScore": 1742,
    "stats": {
     "games": 20,
     "winrate": 0.4,
@@ -193,7 +193,7 @@
     0,
     0,
     0,
-    0
+    352
    ],
    "champions": [
     {
@@ -313,13 +313,13 @@
    "platform": "ru",
    "opgg": "https://op.gg/lol/summoners/ru/missiscox-228",
    "rank": {
-    "tier": "Platinum",
+    "tier": "Gold",
     "division": "III",
-    "lp": 52,
-    "wins": 56,
-    "losses": 49
+    "lp": 34,
+    "wins": 19,
+    "losses": 23
    },
-   "rankScore": 1752,
+   "rankScore": 1334,
    "stats": {
     "games": 20,
     "winrate": 0.4,
@@ -337,7 +337,7 @@
     0,
     0,
     0,
-    0
+    -418
    ],
    "champions": [
     {
