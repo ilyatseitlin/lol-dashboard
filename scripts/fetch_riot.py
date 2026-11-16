@@ -161,16 +161,15 @@ def agg(games):
 
 
 def form_score(stats, role):
+    """Form Score 0-100: KDA, урон, CS и обзор относительно норм роли (винрейт не учитывается)."""
     if not stats:
         return 0
     norm, w = CONFIG["roleNorms"][role], dict(CONFIG["formWeights"])
     if role == "Support":  # у саппорта CS не считаем, вес уходит в обзор
-        w["visionPerMin"] += w.pop("csPerMin")
-        w["csPerMin"] = 0
-    score = w["winrate"] * clamp((stats["winrate"] - 0.25) / 0.5 * 100, 0, 100)
-    for m in ("kda", "csPerMin", "visionPerMin", "dmgPerMin"):
-        score += w[m] * clamp(50 * stats[m] / norm[m], 0, 100)
-    return round(score)
+        w["visionPerMin"] = w.get("visionPerMin", 0) + w.pop("csPerMin", 0)
+    total = sum(w.values()) or 1
+    score = sum(w.get(m, 0) * clamp(50 * stats[m] / norm[m], 0, 100) for m in ("kda", "csPerMin", "visionPerMin", "dmgPerMin"))
+    return round(score / total)
 
 
 def champ_table(games, names, limit):
@@ -358,7 +357,7 @@ def main():
 
     data = {
         "meta": {"mock": False, "team": CONFIG["team"], "patch": ".".join(ver.split(".")[:2]),
-                 "generatedAt": today, "queue": "solo+flex", "window": window, "repo": "#"},
+                 "generatedAt": today, "queue": "+".join({420: "solo", 440: "flex"}.get(q, str(q)) for q in CONFIG["queues"]), "window": window, "repo": "#"},
         "team": team, "players": out_players, "insights": ins,
     }
     tmp = ROOT / "data.json.tmp"

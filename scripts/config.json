@@ -2,7 +2,6 @@
   "team": "КРОВЬ",
   "window": 20,
   "queues": [
-    420,
     440
   ],
   "minTeamMembers": 3,
@@ -83,10 +82,9 @@
     }
   },
   "formWeights": {
-    "winrate": 0.3,
-    "kda": 0.25,
-    "dmgPerMin": 0.2,
-    "csPerMin": 0.15,
-    "visionPerMin": 0.1
+    "kda": 0.35,
+    "dmgPerMin": 0.3,
+    "csPerMin": 0.2,
+    "visionPerMin": 0.15
   }
 }
