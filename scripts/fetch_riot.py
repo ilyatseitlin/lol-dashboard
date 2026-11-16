@@ -100,7 +100,7 @@ def resolve(client, p):
 def rank_of(client, p, puuid):
     entries = client.get(f"https://{p['platform']}.api.riotgames.com/lol/league/v4/entries/by-puuid/{puuid}")
     by_q = {e["queueType"]: e for e in entries}
-    e = by_q.get("RANKED_SOLO_5x5") or by_q.get("RANKED_FLEX_SR")
+    e = by_q.get("RANKED_FLEX_SR")
     if not e:
         return {"tier": "Unranked", "division": "", "lp": 0, "wins": 0, "losses": 0}, None
     tier = e["tier"]
