@@ -3,7 +3,7 @@
   "mock": false,
   "team": "КРОВЬ",
   "patch": "16.23",
-  "generatedAt": "2026-11-19",
+  "generatedAt": "2026-11-20",
   "queue": "flex",
   "window": 20,
   "repo": "#"
@@ -138,6 +138,7 @@
     -307,
     -307,
     -307,
+    -307,
     -307
    ],
    "champions": [
@@ -196,6 +197,7 @@
     0,
     0,
     0,
+    352,
     352,
     352,
     352,
@@ -267,6 +269,7 @@
    "formScore": 53,
    "formDelta": 9,
    "lpHistory": [
+    0,
     0,
     0,
     0,
@@ -349,6 +352,7 @@
     -418,
     -418,
     -418,
+    -418,
     -418
    ],
    "champions": [
@@ -417,6 +421,7 @@
    "formScore": 51,
    "formDelta": 4,
    "lpHistory": [
+    0,
     0,
     0,
     0,
