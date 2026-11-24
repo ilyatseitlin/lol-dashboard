@@ -3,7 +3,7 @@
   "mock": false,
   "team": "КРОВЬ",
   "patch": "16.23",
-  "generatedAt": "2026-11-23",
+  "generatedAt": "2026-11-24",
   "queue": "flex",
   "window": 20,
   "repo": "#"
@@ -132,7 +132,7 @@
    "formDelta": -3,
    "lpHistory": [
     0,
-    0,
+    -307,
     -307,
     -307,
     -307,
@@ -195,7 +195,7 @@
    "formDelta": -2,
    "lpHistory": [
     0,
-    0,
+    352,
     352,
     352,
     352,
@@ -349,7 +349,7 @@
    "formDelta": 10,
    "lpHistory": [
     0,
-    0,
+    -418,
     -418,
     -418,
     -418,
